@@ -1,0 +1,140 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main layout with Grid */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+form button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #005fa3;
+}
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* To-Do */
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+.todo-input button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.todo-input button:hover {
+  background-color: #218838;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  background-color: #e9ecef;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+li button:hover {
+  background-color: #c82333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

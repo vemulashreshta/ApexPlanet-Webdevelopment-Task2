@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML CSS JS Intermediate Project</title>
+  <link rel="stylesheet" href="intermediate.css" />
+</head>
+<body>
+
+  <header>
+    <h1>My Mini Web App</h1>
+    <nav>
+      <a href="#contact">Contact Form</a>
+      <a href="#todo">To-Do List</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contact Form -->
+    <section id="contact" class="card">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+
+    <!-- To-Do List -->
+    <section id="todo" class="card">
+      <h2>To-Do List</h2>
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Enter a new task..." />
+        <button onclick="addTask()">Add Task</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Intermediate Web Project</p>
+  </footer>
+
+  <script src="intermediate.js"></script>
+</body>
+</html>
